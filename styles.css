@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .font-sans {
@@ -52,6 +52,10 @@ html {
     flex-direction: column;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .justify-between {
     justify-content: space-between;
 }
@@ -68,76 +72,24 @@ html {
     background-size: cover;
 }
 
-.w-4\/10 {
-    width: 40%;
-}
-
-.w-5\/10 {
-    width: 50%;
-}
-
-.w-6\/10 {
-    width: 60%;
-}
-
 .w-8\/10 {
     width: 80%;
-}
-
-.w-full {
-    width: 100%;
 }
 
 .w-screen {
     width: 100vw;
 }
 
-.h-5 {
-    height: 5rem;
-}
-
-.h-2\/10 {
-    height: 20%;
-}
-
-.w-1\/10 {
-    width: 15%;
-}
-
 .h-3\/10 {
     height: 30%;
-}
-
-.h-5\/10 {
-    height: 50%;
 }
 
 .h-7\/10 {
     height: 70%;
 }
 
-.h-8\/10 {
-    height: 80%;
-}
-
-.h-full {
-    height: 100%;
-}
-
 .h-screen {
     height: 100vh;
-}
-
-.ml-1 {
-    margin-left: 1rem;
-}
-
-.ml-4 {
-    margin-left: 4rem;
-}
-
-.mr-10 {
-    margin-right: 10rem;
 }
 
 .mt-1 {
@@ -155,62 +107,6 @@ html {
 .mt-10 {
     margin-top: 10rem;
 }
-
-.-mt-4 {
-    margin-top: -4rem;
-}
-
-.-ml-1 {
-    margin-left: -1rem;
-}
-
-.small-logo {
-    background-image: url("./images/logo-标志+英文.png");
-    width: 15.06rem;
-    height: 4.25rem;
-}
-
-.cloud-logo {
-    background-image: url("./images/新logo带字镂空.png");
-    width: 18.19rem;
-    height: 19.56rem;
-}
-
-.big-logo {
-    /* background-image: url("./images/logo-标志+英文+口号.png"); */
-    /* width: 421px;
-    height: 160px; */
-    background-image: url("./images/logo-标志+英文1.png");
-    width: 15.06rem;
-    height: 4.25rem;
-}
-
-.icon {
-    width: 1.94rem;
-    height: 1.88rem;
-}
-
-.about .icon {
-    background-image: url("./images/Image\ 11.png");
-}
-
-.community .icon {
-    background-image: url("./images/Image\ 10.png");
-}
-
-.resources .icon {
-    background-image: url("./images/Image\ 9.png");
-}
-
-.thanks .icon {
-    background-image: url("./images/Image\ 12.png");
-}
-
-/* span.icon {
-    width: 36px;
-    height: 36px;
-    background-image: url("./images/Image\ 13.png");
-} */
 
 .main-upper {
     background-image: url("./images/背景.png");
@@ -239,46 +135,116 @@ html {
     border-radius: 2.5rem;
     line-height: 3.75rem;
     border: 0.06rem solid rgba(23, 125, 202, 1);
+    margin-left: 1rem;
 }
 
-@media screen and (max-width:767px) , (max-height:767px) {
-    html {
-        font-size: 10px;
+@media screen and (max-width: 900px) {
+    .nav-link {
+        width: 100vw;
     }
 
-    .small-logo,
-    .big-logo,
-    .cloud-logo,
-    .icon {
-        display: none;
-    }
-
-    .nav-link,
-    .show,
-    .contact-group .flex {
+    .contact-group .flex-wrap {
         width: 100%;
-        height: max-content;
-    }
-
-    .show {
-        margin-top: 0;
-        margin-left: 2rem;
-    }
-
-    .contact-group .flex {
-        margin-left: .7rem;
+        padding: 2rem;
+        margin-top: 2rem;
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media screen and (min-width:600px) {
+    .main {
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width:1024px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .w-1\/10 {
+        width: 10%;
+    }
+
+    .w-4\/10 {
+        width: 40%;
+    }
+
+    .w-5\/10 {
+        width: 50%;
+    }
+
+    .w-6\/10 {
+        width: 60%;
+    }
+
+    .h-8\/10 {
+        height: 80%;
+    }
+
+    .ml-1 {
+        margin-left: 1rem;
+    }
+
+    .ml-4 {
+        margin-left: 4rem;
+    }
+
+    .-mt-4 {
+        margin-top: -4rem;
+    }
+
+    .small-logo {
+        background-image: url("./images/logo-标志+英文.png");
+        width: 15.06rem;
+        height: 4.25rem;
+    }
+
+    .cloud-logo {
+        background-image: url("./images/新logo带字镂空.png");
+        width: 18.19rem;
+        height: 19.56rem;
+    }
+
+    .big-logo {
+        background-image: url("./images/logo-标志+英文1.png");
+        width: 15.06rem;
+        height: 4.25rem;
+    }
+
+    .icon {
+        width: 1.94rem;
+        height: 1.88rem;
+    }
+
+    .about .icon {
+        background-image: url("./images/Image\ 11.png");
+    }
+
+    .community .icon {
+        background-image: url("./images/Image\ 10.png");
+    }
+
+    .resources .icon {
+        background-image: url("./images/Image\ 9.png");
+    }
+
+    .thanks .icon {
+        background-image: url("./images/Image\ 12.png");
+    }
+
+    .res-origin {
+        margin-left: 0;
+        margin-right: 6rem;
+    }
+
+    .main {
+        min-height: 968px;
     }
 }
 
 @media screen and (min-width:1201px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .about .icon {
@@ -299,5 +265,11 @@ html {
 
     .main-upper {
         background-image: url("./images/背景@2x.png");
+    }
+}
+
+@media screen and (min-width:1400px) {
+    html {
+        font-size: 18px;
     }
 }
