@@ -108,6 +108,10 @@ html {
     margin-top: 10rem;
 }
 
+.main {
+    min-height: 600px;
+}
+
 .main-upper {
     background-image: url("./images/背景.png");
 }
@@ -138,7 +142,7 @@ html {
     margin-left: 1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width:767px) {
     .nav-link {
         width: 100vw;
     }
@@ -150,19 +154,9 @@ html {
     }
 }
 
-@media screen and (min-width:600px) {
-    .main {
-        min-height: 600px;
-    }
-}
-
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
     html {
         font-size: 12px;
-    }
-
-    .w-1\/10 {
-        width: 10%;
     }
 
     .w-4\/10 {
@@ -234,11 +228,20 @@ html {
 
     .res-origin {
         margin-left: 0;
-        margin-right: 6rem;
     }
 
     .main {
         min-height: 968px;
+    }
+
+    .nav-link {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .res-origin {
+        margin-right: 6rem;
     }
 }
 
